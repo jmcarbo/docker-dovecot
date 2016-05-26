@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "$DOVECOT_CONFIG" >/etc/dovecot/local.conf
+eval "$DOVECOT_INIT"
+dovecot -F
